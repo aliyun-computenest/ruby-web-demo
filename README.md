@@ -1,5 +1,6 @@
 # Ruby示例应用
 此应用是一个快速入门示例，用于展示阿里云应用管理如何使用Buildpacks构建部署Ruby应用。
+Heroku buildpack支持的Ruby版本：https://devcenter.heroku.com/articles/ruby-support-reference#ruby-versions
 
 
 # 在阿里云应用管理上部署应用
@@ -18,10 +19,10 @@
 7. 部署成功后访问`http://公网IP:端口`，会显示Hello World
 
 # 手工构建和执行应用
-前提条件：安装Ruby
+前提条件：安装Ruby 3.4.2
 运行应用：
 ```
-gem install bundler:2.3.7
+gem install bundler:2.6.3
 bundle install
 ruby app.rb -p 8080
 ```
